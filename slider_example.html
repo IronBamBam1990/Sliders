@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta http-equiv='X-UA-Compatible' content="5">
+    <title>Home</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen'>
+	<link rel="icon" type="image/x-icon" src="favicon.ico">
+  <script src="script.js"></script>
+  <script src="script1.js"></script>
+</head>
+<style>
+   
+ .BodyBody {
+ 
+	 background: radial-gradient(closest-corner, #1D2226 60%, #0d0f11);
+	 width: 100%;
+	 height: 100%;
+	 background-repeat: no-repeat;
+     
+ }
+ .TitleHome{
+	 margin: 0;
+     font-family:  lato, sans-serif;
+     font-size: 2.5rem;
+     text-align: center;
+     color: #EC6504;
+    }
+    .background-three {
+  background-color: #151515;
+}
+html {
+	 height: 200%;
+	
+	 transform-style: preserver-3d;
+	 font-family: lato, sans-serif;
+}
+
+ ul {
+	 display: block;
+	 text-align: center;
+	 margin: 0 auto;
+	 padding: 0;
+	 width: 100%;
+	 min-width: 535px;
+	 background-color: #343e48;
+	 position: relative;
+	 box-shadow: 0 3px 8px rgba(0, 0, 0, .5);
+}
+ ul:after {
+	 content: "";
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 opacity: 0.5;
+	 background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAB9JREFUeNpiZmBg6AZiDiBWZ4YyQMCOCcYA4kMAAQYAHyYCCUdxidgAAAAASUVORK5CYII=');
+}
+ li {
+	 margin: 0 auto;
+	 display: inline-block;
+	 list-style: none;
+	 padding: 0;
+}
+ a {
+	 display: block;
+	 padding: 25px;
+	 text-transform: uppercase;
+	 position: relative;
+	 z-index: 2;
+	 text-shadow: 1px 0px rgba(0, 0, 0, .4);
+	 color: #686f77;
+	 letter-spacing: 0.2em;
+	 text-decoration: none;
+	 transition: color 200ms;
+	 transform-style: preserve-3d;
+}
+ a:hover {
+	 color: #343e48;
+}
+ a:after {
+	 content: attr(data-title);
+	 position: absolute;
+	 display: block;
+	 text-shadow: none;
+	 top: 29%;
+	 left: 18px;
+	 padding: 5px 7px;
+	 color: transparent;
+	 background: #EC6504;
+	 transform-origin: 50% 0%;
+	 backface-visibility: hidden;
+	 transform: translate3d(0px, 105%, 0px) rotateX(-112deg);
+	 transform-style: preserve-3d;
+	 transition: all 200ms ease;
+	 z-index: -1;
+}
+ li:nth-child(2) a:after {
+	 background: #EC6504;
+}
+ li:nth-child(3) a:after {
+	 background: #EC6504;
+}
+ li:nth-child(4) a:after {
+	 background: #EC6504;
+}
+ a:hover:after {
+	 transform: rotateX(0deg) translateZ(0px);
+}
+.elo { 
+  margin-top: 10%;
+	text-align: center;
+	color: #EC6504;
+	background-color: #1D2226;
+}
+.welcome {
+	margin-top: 29%;
+	margin-bottom: 29%;
+	text-align: center;
+	font-size: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #EC6504;
+}
+.target {
+    text-align: center;
+	font-size: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #EC6504;
+	transform-style: preserve-3d;
+}
+.slidecontainer {
+  align-items: center;
+  display: grid;
+  width: 50%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  margin-top: 5%;
+  position: relative;
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 20%; /* Full-width */
+  height: 4px; /* Specified height */
+  background: #343e48; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.2; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  border: 1px solid #333;
+  box-shadow: -25px 0 0 5px #1D2226;
+  padding-top: 0;
+  margin-left: 40%;
+  
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #EC6504; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #EC6504; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+.counter {
+	text-align: center;
+	font-size: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #EC6504;
+	transform-style: preserve-3d;
+}
+
+.textSliderValue{
+    size:auto;
+	width: 160px;
+	height: 160px;
+	background-color:#151515;
+	position: relative;
+	margin-left: 67%;
+	font-size: 80px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #EC6504;
+	
+}
+
+.units { 	
+  text-align: center;
+	font-size: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #ffffff;}
+
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+
+
+
+/* Circle Settings */
+.container {
+  align-items: center;
+  position: relative;
+  margin-left: 45%;
+    height: 250px;
+    width: 250px;
+    fill: transparent;
+    border-radius: 10px;
+    color: #0d0f11;
+}
+
+.container .box {
+  width: 100%;
+  fill:transparent;
+  align-items: center;
+}
+.container1 {
+  
+  align-items: center;
+  position: relative;
+  margin-left: 20%;
+    height: 200px;
+    width: 200px;
+    fill: transparent;
+    border-radius: 10px;
+    color: #0d0f11;
+}
+.container1 .box1 {
+  width: 100%;
+  fill:transparent;
+  align-items: center;
+}
+
+.container1 .box1 h2 {
+  align-items: center;
+  display: block;
+  text-align: center;
+  color: #EC6504;
+  font-size: 40px;
+  margin-left: 138%;
+  margin-top:20px;
+  
+}
+.container1 .box1 .chart1 {
+  margin-top: 0%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 40px;
+  line-height: 50px;
+  height: 50px;
+  color: #EC6504;
+  fill:transparent;
+ 
+}
+.container1 .box1 canvas {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  fill:transparent;
+
+}
+.container .box h2 {
+  margin-left: -12%;
+  align-items: center;
+  display: block;
+  text-align: center;
+  color: #EC6504;
+  font-size: 40px;
+  
+}
+.container .box .chart {
+  margin-top: 20%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  font-size: 40px;
+  line-height: 100px;
+  height: 70px;
+  color: #286dee;
+  fill:transparent;
+ 
+}
+.container .box canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  width: 100%;
+  fill:transparent;
+
+}
+@media (min-width: 420px) and (max-width: 659px) {
+  .container {
+    grid-template-columns: repeat(2, 160px);
+  }
+}
+
+@media (min-width: 660px) {
+  .container {
+    grid-template-columns: repeat(3, 160px);
+  }
+}
+@media (min-width: 420px) and (max-width: 659px) {
+  .container1 {
+    grid-template-columns: repeat(2, 160px);
+  }
+}
+
+@media (min-width: 660px) {
+  .container1 {
+    grid-template-columns: repeat(3, 160px);
+  }
+}
+/* End Circle */
+</style>
+<body class="BodyBody">
+    <p1 class="TitleHome">
+     Dashboard
+    </p1>
+    <ul class="ul">
+      <li class="li"><a href="/" data-title="Home">Home</a></li>
+	  <li class="li"><a href="/dash" data-title="Dashboard">Dashboard</a></li>
+      <li class="li"><a href="/task" data-title="Tasks">Tasks</a></li>
+      <li class="li"><a href="/statistic" data-title="Statistic">Statistic</a></li>
+      <li class="li"><a href="#" data-title="Settings">Settings</a></li>
+    </ul>
+	<p><input type="range" onchange="updateCounter(this)" id="cg" min="5" max="40" value="" step="0.1" class="slider"><div class="wrapper">
+	
+    <div class="container">
+    <div class="box">
+      <div class="chart" id="counter" data-percent=""></div>
+      <h2><span id="textSliderValue">0</span><sup class="units">&deg;C</sup></h2>
+    </div>
+    </div>
+    <div class="container1">
+    <div class="box1">
+     <div class="chart1" id="humi" data-percent="20" ></div> 
+     <h2><span id="humi">20</span><sup class="units">&percnt;</sup></h2>  
+    </div>
+  </div>
+	<div>
+        <p class="counter"><span id="humi" class="counter"></span>22<sup class="units">&percnt;</sup></p>
+		<p class="counter"><span id="temp" class="counter"></span>22<sup class="units">&deg;C</sup></p>
+	</div>
+	
+	
+</body>
+<footer class="elo">
+  <p>Author: Kamil Padula. All rights reserved © 2022  .</p>
+  <p><a href="mailto:kamilpadula1990@gmail.com">KamilPadula1990@gmail.com</a></p>
+  </footer>
+<script>
+//////////JAVA//////////
+
+var sliderValue;
+
+$(function() {
+  $('.chart').easyPieChart({
+    size: 200,
+    barColor: "#EB5905",
+    scaleLength: 1,
+    lineWidth: 20,
+    trackColor: "#525151",
+    lineCap: "circle",
+    animate: 3000,
+    
+  });
+      //update instance after 5 sec
+      setTimeout(function() {
+       // $('.chart').data('easyPieChart').update(10);
+    }, 1000);
+});
+
+
+$(function() {
+  $('.chart1').easyPieChart({
+    size: 100,
+    barColor: "#286dee",
+    scaleLength: 3,
+    lineWidth: 20,
+    trackColor: "#525151",
+    lineCap: "circle",
+    animate: 3000,
+    
+  });
+      //update instance after 5 sec
+      setTimeout(function() {
+       // $('.chart').data('easyPieChart').update(10);
+    }, 1000);
+});
+
+setInterval(function ( ) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+		document.getElementById("humi").innerHTML = this.responseText;
+    $('.chart').data('easyPieChart').update(this.responseText);
+    }
+  };
+ 
+  xhttp.open("GET", "/humidity", true);
+  xhttp.send();
+}, 10000 ) ;
+
+
+
+setInterval(function ( ) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+		document.getElementById("temp").innerHTML = this.responseText;
+   
+    console.log(this.responseText);
+    }
+  };
+  
+
+  xhttp.open("GET", "/temperature", true);
+  xhttp.send();
+}, 10000) ;
+
+
+
+function updateCounter(element) {
+   //localStorage.clear();
+   sliderValue = document.getElementById("cg").value;
+  document.getElementById("textSliderValue").innerHTML = sliderValue ;
+  $('.chart').data('easyPieChart').update(sliderValue);
+  //console.log(sliderValue);
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", "/slider?value="+sliderValue, true);
+  xhr.send();
+  
+}
+
+
+setInterval(function ( ) {
+
+updateSliderPWM();
+localStorage.setItem("textSliderValue", sliderValue); 
+//console.log(sliderValue);
+}, 5000 ) ;
+
+
+
+setInterval(function ( ) {
+localStorage.getItem("textSliderValue"); 
+//console.log(sliderValue);
+}, 6000 ) ;
+
+
+
+
+</script>
+</html>
